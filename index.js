@@ -13,13 +13,13 @@ books = [book1, book2, book3];
 // add event listner to newly added book remove button
 let removeBtn = document.querySelectorAll('.remove');
 
-function removeBook(ref) {
+const removeBook = (ref) => {
   const result = books.filter((value) => value.id !== ref);
   books = result;
   addToLocalStorage(books);
-}
+};
 
-function addEvents() {
+const addEvents = () => {
   removeBtn.forEach((element) => {
     element.addEventListener('click', (e) => {
       const ref = e.target.id;
@@ -27,11 +27,12 @@ function addEvents() {
       e.target.parentElement.remove();
     });
   });
-}
+};
 
 // populate dom with the list
 const addBtn = document.querySelector('#add-btn');
-function showBooks(list) {
+
+const showBooks = (list) => {
   const booksListDiv = document.querySelector('#Book_Lists');
   for (let i = 0; i < list.length; i += 1) {
     const div = document.createElement('div');
@@ -48,13 +49,13 @@ function showBooks(list) {
   }
   removeBtn = document.querySelectorAll('.remove');
   addEvents();
-}
+};
 const listClass = document.getElementById('List');
 const addNewClass = document.getElementById('Add_new');
 const contactClass = document.getElementById('Contact');
 
 // add book to the list
-function addBook() {
+const addBook = () => {
   const bookTitle = document.querySelector('#title').value;
   const bookAuthor = document.querySelector('#author').value;
   if (bookTitle && bookAuthor) {
@@ -67,7 +68,7 @@ function addBook() {
     addNewClass.classList.add('none');
     contactClass.classList.add('none');
   }
-}
+};
 addBtn.addEventListener('click', addBook);
 window.onload = () => {
   if (localStorage.getItem('data') === null) {
