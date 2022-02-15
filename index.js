@@ -1,16 +1,8 @@
-let books;
+// import Book from modules
+import addToLocalStorage from './modules/localStorage.js';
+import Book from './modules/shelfClass.js';
 
-// add data to local storage
-function addToLocalStorage(data) {
-  localStorage.setItem('data', JSON.stringify(data));
-}
-class Book {
-  constructor(title, author, id) {
-    this.title = title;
-    this.author = author;
-    this.id = id;
-  }
-}
+let books;
 
 const book1 = new Book('title1', 'author1', '001');
 const book2 = new Book('title2', 'author2', '002');
@@ -109,5 +101,12 @@ jumpToContact.addEventListener('click', () => {
 });
 
 // Adding date
-const dateDisplay = document.getElementById('date');
-dateDisplay.innerHTML = Date();
+// const dateDisplay = document.getElementById('date');
+// dateDisplay.innerHTML = Date();
+
+/* eslint-disable no-undef */
+const time = document.querySelector('#date');
+const currentDate = luxon.DateTime.local().toLocaleString(
+  luxon.DateTime.DATETIME_FULL,
+);
+time.innerHTML = currentDate;
