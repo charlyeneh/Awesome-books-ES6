@@ -19,10 +19,9 @@ button {
 
 #Nav_bar {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0.5rem 1rem 1rem 1rem;
-  gap: 60%;
   border: 1px solid black;
   box-shadow: 0.05rem 0.05rem 2rem;
   font-size: 1.3rem;
@@ -31,7 +30,9 @@ button {
 
 #Sections {
   display: flex;
-  gap: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .left_border {
@@ -41,8 +42,9 @@ button {
 }
 
 #date {
-  padding-left: 70%;
-  padding-right: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
 }
 
 a {
