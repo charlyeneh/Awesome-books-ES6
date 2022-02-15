@@ -100,10 +100,6 @@ jumpToContact.addEventListener('click', () => {
   contactClass.classList.remove('none');
 });
 
-// Adding date
-// const dateDisplay = document.getElementById('date');
-// dateDisplay.innerHTML = Date();
-
 /* eslint-disable no-undef */
 const time = document.querySelector('#date');
 const currentDate = luxon.DateTime.local().toLocaleString(

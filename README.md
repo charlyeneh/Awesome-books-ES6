@@ -4,7 +4,7 @@
 
 ![screenshot](./images/awses6.png)
 
-> Description the project.
+> Description of the project.
 
 In this project, i restructured the Awesome books app code. The goal is to make it more organized by using modules. I also added in some ES6 syntax.
 
