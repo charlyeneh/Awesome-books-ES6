@@ -5,6 +5,7 @@
 ![screenshot](./images/awses6.png)
 
 > Description the project.
+
 In this project, i restructured the Awesome books app code. The goal is to make it more organized by using modules. I also added in some ES6 syntax.
 
 
@@ -23,7 +24,7 @@ In this project, i restructured the Awesome books app code. The goal is to make 
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://charlyeneh.github.io/Awesome-books-ES6/)
 
 
 ## Getting Started
